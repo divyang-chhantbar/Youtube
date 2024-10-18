@@ -1,0 +1,15 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "main": "handleDownload.util.js",
+  "scripts": {
+    "start": "node handleDownload.util.js",
+    "dev": "nodemon handleDownload.util.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "ytdl-core": "^4.11.5",
+    "nodemon": "^2.0.15"
+  }
+}

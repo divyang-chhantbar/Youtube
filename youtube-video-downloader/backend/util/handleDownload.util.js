@@ -2,9 +2,12 @@ const express = require("express");
 const { exec } = require("child_process"); // For running yt-dlp commands
 const { google } = require("googleapis"); // Google API client
 const { resolve } = require("path");
+const cors = require('cors');
+
 
 const app = express();
 const PORT = 4000;
+app.use(cors());
 
 // YouTube API setup (replace YOUR_API_KEY with your actual key)
 const youtube = google.youtube({
